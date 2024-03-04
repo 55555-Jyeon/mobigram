@@ -1,0 +1,38 @@
+.wrapper {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  position: absolute;
+  left: 5%;
+}
+.container form {
+  width: 350px;
+  height: 402px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #cacaca;
+  margin-bottom: 14px;
+  background-color: white;
+}
+/* logo */
+.container form img {
+  width: 180px;
+  height: 54px;
+  margin: 10px 0 28px;
+}
+.container form p {
+  padding: 6px 0;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+}

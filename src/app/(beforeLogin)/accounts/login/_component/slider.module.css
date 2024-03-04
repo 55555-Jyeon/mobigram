@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  top: 3.25%;
+  left: 54.25%;
+  width: 100%;
+  height: fit-content;
+  transition: all ease-in-out;
+}
+
+.mobileImg {
+  width: 390px;
+  margin-top: 10%;
+  height: fit-content;
+}

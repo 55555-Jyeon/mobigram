@@ -1,3 +1,5 @@
-export default function SignInPage() {
-  return <main>sign-in page</main>;
+import SignInPage from "./(beforeLogin)/accounts/login/page";
+
+export default function RootPage() {
+  return <SignInPage />;
 }
