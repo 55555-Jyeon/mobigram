@@ -2,7 +2,11 @@
 
 import React, { ChangeEvent, useState } from "react";
 import style from "./formInput.module.css";
-import { REGEXP } from "./regexp";
+import { REGEXP } from "../_consts/regexp";
+import ErrorIcon from "../../../../../public/icon/mismatch.png";
+import AccessIcon from "../../../../../public/icon/confirm.png";
+import Image from "next/image";
+import { FieldValues } from "react-hook-form";
 
 type Props = {
   label: string;
@@ -10,7 +14,7 @@ type Props = {
   type: "text" | "password";
   register: any;
   isDirty?: boolean;
-  errors?: boolean;
+  errors?: FieldValues;
   defaultValues?: any;
 };
 
@@ -52,7 +56,23 @@ export default function FormInput({
             },
           })}
         />
-        {errors ? <p>error message</p> : <p>access message</p>}
+        {errors ? (
+          <Image
+            className={!isFocused ? "hidden" : ""}
+            src={ErrorIcon}
+            alt={"error icon"}
+          />
+        ) : (
+          <Image
+            className={
+              (defaultValues === null && isFocused) || !isFocused
+                ? "hidden"
+                : ""
+            }
+            src={AccessIcon}
+            alt={"access icon"}
+          />
+        )}
       </div>
     </div>
   );
