@@ -3,8 +3,6 @@
 import React, { ChangeEvent, useState } from "react";
 import style from "./formInput.module.css";
 import { REGEXP } from "../_consts/regexp";
-import ErrorIcon from "../../../../../public/icon/mismatch.png";
-import AccessIcon from "../../../../../public/icon/confirm.png";
 import Image from "next/image";
 import { FieldValues } from "react-hook-form";
 
@@ -59,7 +57,9 @@ export default function FormInput({
         {errors ? (
           <Image
             className={!isFocused ? "hidden" : ""}
-            src={ErrorIcon}
+            width={20}
+            height={20}
+            src={"/icon/mismatch.png"}
             alt={"error icon"}
           />
         ) : (
@@ -69,7 +69,9 @@ export default function FormInput({
                 ? "hidden"
                 : ""
             }
-            src={AccessIcon}
+            width={20}
+            height={20}
+            src={"/icon/confirm.png"}
             alt={"access icon"}
           />
         )}

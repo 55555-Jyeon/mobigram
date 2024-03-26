@@ -9,14 +9,13 @@
   justify-content: center;
   flex-direction: column;
 }
-
 .container {
   position: absolute;
   left: 5%;
 }
 .container form {
   width: 350px;
-  height: 402px;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,15 +24,33 @@
   margin-bottom: 14px;
   background-color: white;
 }
-/* logo */
-.container form img {
+.logo {
   width: 180px;
   height: 54px;
-  margin: 10px 0 28px;
+  margin: 18px 0 36px;
 }
 .container form p {
   padding: 6px 0;
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
+}
+.lineGroup p {
+  width: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #828282;
+  font-weight: 500 !important;
+}
+.lineGroup p::before,
+.lineGroup p::after {
+  display: inline-block;
+  content: "";
+  width: 6vw;
+  height: 1px;
+  background-color: #cacaca;
+}
+.findPW {
+  margin: 0.8vw 0;
 }

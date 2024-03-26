@@ -26,8 +26,8 @@
   position: relative;
   border: 1px solid #cacaca;
   border-radius: 3px;
-  min-width: 268px;
-  min-height: 34px;
+  width: 14vw;
+  min-height: 3.2vh;
   padding-left: 10px;
 }
 .inputBox input:focus {
@@ -37,7 +37,7 @@
 /* error & access icons */
 .inputBox img {
   position: relative;
-  bottom: 73%;
+  bottom: 52%;
   left: 90%;
   width: 20px !important;
   height: 20px;
