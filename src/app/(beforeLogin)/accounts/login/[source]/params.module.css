@@ -1,7 +1,6 @@
 .container {
   width: 100vw;
   height: calc(100dvh - 6vh);
-
   display: flex;
   justify-content: center;
   align-items: center;
