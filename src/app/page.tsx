@@ -1,5 +1,5 @@
-import SignInPage from "./(beforeLogin)/accounts/login/page";
+import IntroPage from "./(beforeLogin)/accounts/login/page";
 
 export default function RootPage() {
-  return <SignInPage />;
+  return <IntroPage />;
 }

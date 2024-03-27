@@ -5,7 +5,6 @@ import Image from "next/image";
 import style from "./form.module.css";
 import Logo from "../../../../../../public/logo.png";
 import { SIGNIN } from "../../_consts/requirements";
-
 import FormButton from "../../_component/FormButton";
 import FormInput from "../../_component/FormInput";
 import EasyLogin from "../../_component/EasyLogin";
@@ -27,32 +26,34 @@ export default function Form() {
   const navSignUp = () => {};
 
   return (
-    <div className={style.wrapper}>
-      <div className={style.container}>
-        <form>
-          <Image className={style.logo} src={Logo} alt={"mobigram"} />
-          {SIGNIN.map((item, idx) => {
-            const { label, name, type } = item;
-            return (
-              <FormInput
-                key={idx}
-                label={label}
-                name={name}
-                type={type as "text" | "password"}
-                register={register}
-                errors={(errors as any)[label]}
-              />
-            );
-          })}
-          <FormButton />
-          <div className={style.lineGroup}>
-            <p>OR</p>
-          </div>
-          <EasyLogin />
-          <p className={style.findPW}>Forgot password?</p>
-        </form>
-        <SwitchForm />
-      </div>
+    <div className={style.container}>
+      <form>
+        <Image className={style.logo} src={Logo} alt={"mobigram"} />
+        {SIGNIN.map((item, idx) => {
+          const { label, name, type } = item;
+          return (
+            <FormInput
+              key={idx}
+              label={label}
+              name={name}
+              type={type as "text" | "password"}
+              register={register}
+              errors={(errors as any)[label]}
+            />
+          );
+        })}
+        <FormButton>Sign in</FormButton>
+        <div className={style.lineGroup}>
+          <p>OR</p>
+        </div>
+        <EasyLogin />
+        <p className={style.findPW}>Forgot password?</p>
+      </form>
+      <SwitchForm
+        text="Don’t have an account?"
+        link="/accounts/emailsignup"
+        navTo="Sign up"
+      />
     </div>
   );
 }

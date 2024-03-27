@@ -1,17 +1,5 @@
-.wrapper {
-  position: absolute;
-  top: -0%;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .container {
   position: absolute;
-  left: 5%;
 }
 .container form {
   width: 350px;
@@ -31,7 +19,7 @@
 }
 .container form p {
   padding: 6px 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   cursor: pointer;
 }
