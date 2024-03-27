@@ -1,0 +1,17 @@
+.container {
+  width: 350px;
+  height: 63px;
+  border: 1px solid #cacaca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container span {
+  margin: 0 0.4vw;
+  font-size: 0.8vw;
+  font-weight: 200;
+}
+.container span:nth-of-type(2) {
+  color: #67b5fa;
+  font-weight: 600;
+}

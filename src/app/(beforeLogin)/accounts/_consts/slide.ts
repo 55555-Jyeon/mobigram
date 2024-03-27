@@ -1,7 +1,7 @@
-import slide01 from "../../../../../../public/main-slider/01.svg";
-import slide02 from "../../../../../../public/main-slider/02.svg";
-import slide03 from "../../../../../../public/main-slider/03.svg";
-import slide04 from "../../../../../../public/main-slider/04.svg";
+import slide01 from "../../../../../public/main-slider/01.svg";
+import slide02 from "../../../../../public/main-slider/02.svg";
+import slide03 from "../../../../../public/main-slider/03.svg";
+import slide04 from "../../../../../public/main-slider/04.svg";
 
 export const SlideData = [
   {

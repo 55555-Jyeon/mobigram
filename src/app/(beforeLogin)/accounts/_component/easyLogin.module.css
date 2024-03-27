@@ -1,0 +1,17 @@
+.easyLogin {
+  width: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.4vw 0;
+}
+.easyLogin .icon {
+  width: 1.4vw;
+  height: 1.4vw;
+  border-radius: 50%;
+}
+.easyLogin p {
+  font-size: 1vw;
+  font-weight: 500 !important;
+  color: #010101;
+}

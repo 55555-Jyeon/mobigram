@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import iphone from "../../../../../../public/main-slider/phone.png";
-import { SlideData } from "./slide";
+import { SlideData } from "../../_consts/slide";
 import style from "./slider.module.css";
 
 interface SlideItem {
